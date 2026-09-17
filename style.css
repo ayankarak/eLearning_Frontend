@@ -55,9 +55,9 @@
 .join-btn {
     background-color:#06BBCC;
     color: white;
-    padding: 12px 25px;
+    padding: 18px 40px;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     border-radius: 2px;
     transition: 0.3s;
 }
@@ -127,6 +127,30 @@
 
 .btn-secondary:hover {
     background-color: #f1f1f1;
+}
+
+.slider-arrows {
+    position: absolute;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.arrow {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.arrow:hover {
+    background:#06BBCC;
 }
 
 .hero-content p {
@@ -392,6 +416,23 @@
     display: flex;
     gap: 10px;
     margin-top: 20px;
+}
+
+.social-icons a {
+    width: 38px;
+    height: 38px;
+    background: rgba(255,255,255,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    margin-bottom: 0;
+}
+
+.social-icons a:hover {
+    background: #06BBCC;
+    padding-left: 0;
 }
 
 .footer-bottom {
