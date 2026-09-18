@@ -744,9 +744,15 @@
     margin-left: 15px;
 }
 
+/* ---------- Tablet / small-desktop (<=992px) ---------- */
 @media (max-width: 992px) {
     .navbar {
         position: relative;
+    }
+
+    .logo {
+        padding: 0 15px;
+        font-size: 20px;
     }
 
     .mobile-menu-btn {
@@ -777,36 +783,100 @@
         padding: 8px 0;
     }
 
+    .nav-btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-right: 15px;
+    }
+
     .join-btn {
         padding: 8px 16px;
         font-size: 13px;
     }
+
+    .hero {
+        padding: 0 40px;
+        min-height: 70vh;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .slider-arrows {
+        right: 20px;
+    }
+
+    .features,
+    .categories-grid,
+    .courses-grid,
+    .instructors-grid,
+    .testimonial-grid,
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 40px;
+        gap: 20px;
+    }
+
+    .features {
+        padding: 40px 40px;
+    }
+
+    .about-section {
+        padding: 60px 40px;
+        gap: 30px;
+    }
+
+    .cource-section,
+    .courses-section,
+    .instructors-section,
+    .testimonial-section {
+        padding: 60px 0;
+    }
+
+    .footer {
+        padding: 60px 40px 20px 40px;
+    }
 }
 
+/* ---------- Mobile (<=768px) ---------- */
 @media (max-width: 768px) {
+    .logo {
+        padding: 0 10px;
+    }
+
     .hero {
         padding: 0 20px;
         text-align: center;
         justify-content: center;
+        min-height: auto;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     .hero-content {
         max-width: 100%;
     }
 
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
     .hero-btns {
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .slider-arrows {
         display: none;
     }
 
-    .features, 
-    .categories-grid, 
-    .courses-grid, 
-    .instructors-grid, 
-    .testimonial-grid, 
+    .features,
+    .categories-grid,
+    .courses-grid,
+    .instructors-grid,
+    .testimonial-grid,
     .footer-grid {
         grid-template-columns: 1fr !important;
         padding: 0 20px;
@@ -817,15 +887,76 @@
     }
 
     .about-section {
+        flex-direction: column;
         padding: 40px 20px;
+        text-align: center;
+    }
+
+    .img-container {
+        height: 260px;
+    }
+
+    .about-text h2 {
+        font-size: 28px;
     }
 
     .about-list {
         grid-template-columns: 1fr;
+        text-align: left;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cource-section,
+    .courses-section,
+    .instructors-section,
+    .testimonial-section {
+        padding: 40px 0;
+    }
+
+    .center-title h2 {
+        font-size: 28px;
+    }
+
+    .cat-item {
+        height: 180px;
+    }
+
+    .instructor-img {
+        height: 220px;
+    }
+
+    .instructor-social {
+        top: 185px;
     }
 
     .footer {
         padding: 40px 20px 20px 20px;
+    }
+
+    .footer-col {
+        text-align: center;
+    }
+
+    .footer-col h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .footer-gallery {
+        max-width: 260px;
+        margin: 0 auto;
+    }
+
+    .newsletter-form {
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .footer-bottom {
@@ -836,5 +967,53 @@
 
     .footer-bottom-links {
         justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+/* ---------- Small phones (<=480px) ---------- */
+@media (max-width: 480px) {
+    .hero-content .subtitle {
+        font-size: 13px;
+    }
+
+    .hero-content h1 {
+        font-size: 26px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .feature-box {
+        padding: 30px 20px;
+    }
+
+    .course-footer {
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .newsletter-form input {
+        border-radius: 2px;
+        margin-bottom: 8px;
+    }
+
+    .newsletter-form button {
+        border-radius: 2px;
+        padding: 10px;
     }
 }
