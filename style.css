@@ -734,45 +734,45 @@
     margin-top: 10px;
 }
 
+.mobile-menu-btn {
+    display: none;
+    background: transparent;
+    border: none;
+    color: var(--primary);
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
 @media (max-width: 992px) {
     .navbar {
-        padding: 15px 20px;
+        position: relative;
     }
-    
+
+    .mobile-menu-btn {
+        display: inline-block;
+    }
+
     .nav-links {
-        display: none; 
-    }
-
-    .hero {
-        padding: 0 40px;
-        min-height: 60vh;
-    }
-
-    .hero-content h1 {
-        font-size: 36px;
-    }
-
-    .features, 
-    .categories-grid, 
-    .courses-grid, 
-    .instructors-grid, 
-    .testimonial-grid, 
-    .footer-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
-        padding: 0 30px;
-    }
-
-    .features {
-        padding: 40px 30px;
-    }
-
-    .about-section {
+        display: none;
         flex-direction: column;
-        padding: 50px 30px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        padding: 20px 0;
+        gap: 15px;
+        margin: 0;
+        text-align: center;
+    }
+    .nav-links.show {
+        display: flex;
     }
 
-    .footer {
-        padding: 60px 30px 20px 30px;
+    .nav-links a {
+        padding: 8px 0;
     }
 }
 
