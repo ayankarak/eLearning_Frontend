@@ -10,10 +10,6 @@ body {
     padding: 0;
     width: 100%;
 }
-
-body {
-    border: none;
-}
 .navbar{
     display:flex;
     align-items:center;
