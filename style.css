@@ -1,3 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    border: none;
+}
 .navbar{
     display:flex;
     align-items:center;
@@ -6,7 +22,7 @@
     justify-content:space-between;
     position:sticky;
     top:0;
-    z-index:1200;
+    z-index:1000;
 }
 
 .logo {
@@ -54,13 +70,14 @@
 }
 
 .join-btn {
-    margin-left:0 ;
+    margin: left -10px; 
     background-color:#06BBCC;
     color: white;
-    padding: 18px 40px;
+    gap: 28px;
+    padding: 20px 40px;
     text-decoration: none;
     font-weight: 700;
-    border-radius: 2px;
+    border-radius: 0px;
     transition: 0.3s;
 }
 
